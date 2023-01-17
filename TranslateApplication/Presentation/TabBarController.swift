@@ -16,8 +16,8 @@ class TabBarController: UITabBarController {
 }
 
 private extension TabBarController {
-    func setupTabBar {
-        let translateViewController = TranslateView()
+    func setupTabBar() {
+        let translateViewController = TranslateViewController()
         translateViewController.tabBarItem = UITabBarItem(
             title: "번역",
             image: UIImage(systemName: "mic"),
