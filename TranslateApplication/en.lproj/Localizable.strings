@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  TranslateApplication
+
+  Created by 이준혁 on 2023/01/23.
+  
+*/
+
+// Language
+"Korean" = "Korean";
+"English" = "English";
+"Japanese" = "Japanese";
+"Russian" = "Russian";
+"Chinese" = "Chinese";
+
+// TrnaslateViewController
+"Translate" = "Translate";
+
+// BookmarkViewController
+"Bookmark" = "Bookmark";

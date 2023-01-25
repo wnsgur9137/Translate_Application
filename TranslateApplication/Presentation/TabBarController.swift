@@ -17,21 +17,23 @@ class TabBarController: UITabBarController {
 
 private extension TabBarController {
     func setupTabBar() {
-        let translateViewController = TranslateViewController()
-        translateViewController.tabBarItem = UITabBarItem(
+//        let translateViewController = TranslateViewController()
+        let translateNavigationController = UINavigationController(rootViewController: TranslateViewController())
+        translateNavigationController.tabBarItem = UITabBarItem(
             title: "번역",
             image: UIImage(systemName: "mic"),
             selectedImage: UIImage(systemName: "mic.fill"))
         
-        let bookmarkViewController = UIViewController()
-        bookmarkViewController.tabBarItem = UITabBarItem(
+//        let bookmarkViewController = UIViewController()
+        let bookmarkNavigationController = UINavigationController(rootViewController: UIViewController())
+        bookmarkNavigationController.tabBarItem = UITabBarItem(
             title: "즐겨찾기",
             image: UIImage(systemName: "star"),
             selectedImage: UIImage(systemName: "star.fill"))
         
         viewControllers = [
-            translateViewController,
-            bookmarkViewController
+            translateNavigationController,
+            bookmarkNavigationController
         ]
     }
 }
